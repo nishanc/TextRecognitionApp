@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:id="@+id/image_view">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_display"
+        android:layout_below="@+id/image_view"
+        android:textSize="26dp"
+        android:maxLines="5"
+        android:layout_margin="10dp"
+        >
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/capture_image"
+        android:layout_above="@id/detect_image"
+        android:text="Capture"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detect_image"
+        android:layout_above="@id/speak"
+        android:text="Detect"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/speak"
+        android:layout_alignParentBottom="true"
+        android:text="Speak"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark">
+    </Button>
+</RelativeLayout>
